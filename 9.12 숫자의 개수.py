@@ -19,4 +19,4 @@ reverse_str = in_str[::-1]
 print(reverse_str)
 
 print(100)
-
+print(140)
