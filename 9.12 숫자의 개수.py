@@ -17,3 +17,5 @@ in_str = input("문자열 입력 : ")
 #     print(in_str[i], end="")
 reverse_str = in_str[::-1]
 print(reverse_str)
+
+print(100)
