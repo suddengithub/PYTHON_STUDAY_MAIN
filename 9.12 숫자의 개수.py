@@ -19,5 +19,5 @@ reverse_str = in_str[::-1]
 print(reverse_str)
 
 
-
+ㄴㅇㅁㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴ
 
