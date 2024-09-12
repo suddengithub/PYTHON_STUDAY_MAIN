@@ -15,3 +15,5 @@ calc_min -= 45
 
 # 다시 시간과 분으로 환산해 출력
 print(f"{calc_min // 60}:{calc_min % 60}")
+
+print(100)
