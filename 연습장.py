@@ -10,5 +10,4 @@
 #     else:
 #         print("성적을 잘못 입력하셨습니다.")
 
-print("Hello",end=" ")
-print("python")
+rand = random.randrange(1

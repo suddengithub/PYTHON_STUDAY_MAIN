@@ -23,3 +23,16 @@
 # ls = str(a * b * c)
 # for i in range(10):
 #     print(ls.count(str(i)), end=" ")
+
+in_str = input("문자열 입력 : ")
+for i in range(len(in_str)-1, -1, -1)
+    print(in_str[i], end="")
+    reverse_str = in_str[::-1]
+    print(reverse_str)
+
+
+
+
+
+
+
