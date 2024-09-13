@@ -30,6 +30,7 @@
 # addr = input(f"주소를 입력하세요: ")
 # print(f"주소 : {addr}")
 
+print(f"주소 : {addr}")
 
 
 
