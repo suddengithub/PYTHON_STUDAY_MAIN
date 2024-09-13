@@ -1,9 +1,8 @@
 # 커피 메뉴 만들기
-# [1] 메뉴 보기 [2] 메뉴 조회 [3] 메뉴 추가 [4] 메뉴 삭제 [5] 종료하기
+# [1] 메뉴 보기 [2] 메뉴 조회 [3] 메뉴 추가 [4] 메뉴 삭제 [5] 불러오기 [6] 저장하기 [7] 분류별 보기 [8] 종료하기
 # 기본 메뉴 만들기
+# 카테고리별 조회 추가하기
 import json
-
-from anaconda_navigator.utils.url_utils import file_name
 
 menu = {
     "Americano": ["Coffee", 2000, "기본 커피입니다."],
@@ -21,8 +20,8 @@ file_name = "menu.json"
 # 파일에서 메뉴를 읽어오는 함수
 def load_menu():
     try:
-        with open(file_name, "r", enconding="utf-8") as file:
-            return json.load(file):
+        with open(file_name, "r", encoding="utf-8") as file:
+            return json.load(file)
     except FileNotFoundError:
         print("해당 파일이 없습니다.")
     except json.JSONDecodeError:
@@ -61,10 +60,16 @@ def del_menu(key):
         print(f"{key} 메뉴가 삭제 되었습니다.")
     else:
         print("삭제할 메뉴가 없습니다")
+# 카테고리별 보기
+def get_category(cate):
+    for key, value in menu.items(): # items는 key값과 value값을 한꺼번에 뽑아낸다.
+        if cate == value[0]:
+            print(key, value[0], value[1], value[2])
+
 
 while True:
     print("메뉴를 선택하세요 : ")
-    sel = input("[1] 메뉴 보기 [2] 메뉴 조회 [3] 메뉴 추가 [4] 메뉴 삭제 [5] 종료하기 : ")
+    sel = input("[1] 메뉴 보기 [2] 메뉴 조회 [3] 메뉴 추가 [4] 메뉴 삭제 [5] 불러오기 [6] 저장하기 [7] 분류별 보기 [8] 종료하기 : ")
     if sel == "1":
         print_menu()
     elif sel == "2":
@@ -80,6 +85,13 @@ while True:
         key = input("삭제할 메뉴 입력 : ")
         del_menu(key)
     elif sel == "5":
+        menu = load_menu()
+    elif sel == "6":
+        save_menu()
+    elif sel == "7":
+        name = input("카테고리 입력 : ")
+        get_category(name)
+    elif sel == "8":
         print("영업을 종료합니다.")
         break
     else:
