@@ -1,2 +1,5 @@
-print(100)
-print(100)
+name = "jack"
+print(name)
+
+name = "jack"
+print(name)
