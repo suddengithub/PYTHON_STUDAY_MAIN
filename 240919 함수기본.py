@@ -94,9 +94,7 @@ h = int(input("키 입력 : "))
 g = int(input("성별 [1]남성 / [2]여성 : "))
 weight = round(std_weight(h, g), 2)   # 소수점 3번째 자리를 반올림해서 소수점 2자리 만듬
 gender_str = "", "남성", "여성"
-print(f"키 : {h}cm {gender_str[g]}의 표준 체중은 {weight}kg 입니다."))
-
-
+print(f"키 : {h}cm {gender_str[g]}의 표준 체중은 {weight}kg 입니다.") 
 
 
 

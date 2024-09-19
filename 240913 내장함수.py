@@ -2,13 +2,13 @@
 #
 # # 매개변수로 전달된 값 중 가장 큰 값을 반환
 # # print(max(32, 45 ,67, 12 ,45))
-# # score = list(map(int, input("정수 입력 : ").split())) # 리스토 형으로 정수 값 반환
-# # print((max(score)))
+# # score.txt = list(map(int, input("정수 입력 : ").split())) # 리스토 형으로 정수 값 반환
+# # print((max(score.txt)))
 # # print(max([1,2,3,4,5,6,7,8]))
 # #
 # # print(min(32, 45 ,67, 12 ,45))
-# # score = list(map(int, input("정수 입력 : ").split())) # 리스토 형으로 정수 값 반환
-# # print((min(score)))
+# # score.txt = list(map(int, input("정수 입력 : ").split())) # 리스토 형으로 정수 값 반환
+# # print((min(score.txt)))
 # # print(min([1,2,3,4,5,6,7,8]))
 #
 # # 시퀀스 자료형의 값을 모두 더 해줌
