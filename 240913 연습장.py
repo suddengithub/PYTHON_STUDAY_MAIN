@@ -32,6 +32,7 @@
 
 # print(f"주소 : {addr}")
 
+print(f"w주소 : {addr}")
 
 
 
