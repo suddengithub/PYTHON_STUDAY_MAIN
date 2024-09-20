@@ -66,6 +66,8 @@ def get_category(cate):
         if cate == value[0]:
             print(key, value[0], value[1], value[2])
 
+def main():
+    order = Order()
 
 while True:
     print("메뉴를 선택하세요 : ")

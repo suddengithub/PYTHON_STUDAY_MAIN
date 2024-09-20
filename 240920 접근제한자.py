@@ -19,15 +19,16 @@ class TV:
             self.__channel = cnl
         else :
             print("채널 설정 범위가 아닙니다.")
-
     def set_volume(self, vol):
         self.__volume = vol
+
     def get_on(self):
         return self.__isOn
     def get_channel(self):
         return self.__channel
     def get_volume(self):
         return self.__volume
+
     def view_tv(self):
         power = ("OFF", "ON")
         print(f"이름 : {self.__name}")
